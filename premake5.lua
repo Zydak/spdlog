@@ -3,6 +3,7 @@ project "spdlog"
     kind "StaticLib"
     language "C++"
     location "build"
+	staticruntime "on"
 
     objdir "build/obj/%{cfg.buildcfg}"
     targetdir "build/bin/%{cfg.buildcfg}"
@@ -10,6 +11,7 @@ project "spdlog"
     defines
     {
         "SPDLOG_COMPILED_LIB",
+        "D_CRT_SECURE_NO_WARNINGS",
     }
 
     includedirs
