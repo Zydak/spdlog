@@ -4,7 +4,7 @@
 // All rights reserved.
 //
 // For the license information refer to format.h.
-
+#pragma warning(push, 0)
 #ifndef FMT_CORE_H_
 #define FMT_CORE_H_
 
@@ -3321,3 +3321,5 @@ FMT_END_NAMESPACE
 #  include "format.h"
 #endif
 #endif  // FMT_CORE_H_
+
+#pragma warning(pop)
