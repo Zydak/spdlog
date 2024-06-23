@@ -4,6 +4,7 @@ project "spdlog"
     language "C++"
     location "build"
 	staticruntime "on"
+	cppdialect "C++20"
 
     objdir "build/obj/%{cfg.buildcfg}"
     targetdir "build/bin/%{cfg.buildcfg}"
