@@ -25,6 +25,7 @@ project "spdlog"
     {
         "src/**.cpp"
     }
+    buildoptions { "/MP" }
 
   filter "configurations:Debug"
 		runtime "Debug"
